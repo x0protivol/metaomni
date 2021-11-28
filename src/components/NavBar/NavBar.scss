@@ -1,0 +1,33 @@
+.nav__area {
+  padding-top: 30px;
+  ul {
+    li {
+      .leftLink {
+        background-color: #fdcbda;
+        border-radius: 18px;
+        padding: 16px 16px !important;
+      }
+      .midLink {
+        padding: 16px 16px !important;
+        border-radius: 18px;
+        background-color: #fef362;
+      }
+      .rightLink {
+        padding: 16px 16px !important;
+        border-radius: 18px;
+        background-color: #c4fef3;
+      }
+      .current__voting {
+        background-color: #f9f9f9;
+        border-radius: 20px;
+        padding: 14px 18px !important;
+      }
+      a {
+        font-weight: 600;
+        color: #000000 !important;
+        font-size: 18px;
+        margin-left: 42px;
+      }
+    }
+  }
+}

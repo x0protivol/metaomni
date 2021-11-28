@@ -1,0 +1,53 @@
+.current__voting__card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .current__card {
+    padding-right: 30px;
+    // max-width: 564px;
+    // height: 448px;
+    border-radius: 54px;
+    padding-left: 210px;
+
+    .card__content {
+      .card__top__left {
+        padding-right: 30px;
+        p {
+          padding-top: 15px;
+          text-align: left;
+          font-weight: 400 !important;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+.card__wrapped {
+  background-color: #f9f9f9;
+  border-radius: 54px;
+}
+.card-img {
+  position: relative;
+  background-color: #fff;
+  .relative__image {
+    background-color: #fff;
+    position: absolute;
+
+    border-radius: 54px;
+  }
+  border-radius: 54px;
+}
+.card__btn__area {
+  margin-left: -60px;
+  .card__btn {
+    width: 100%;
+    z-index: -999;
+    background-color: #c4fef3;
+    padding: 25px 0px;
+    margin-top: 36px;
+
+    border-bottom-right-radius: 54px;
+    border: none;
+    // border-bottom-left-radius: 54px;
+  }
+}
