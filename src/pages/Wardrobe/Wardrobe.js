@@ -3,9 +3,9 @@ import NavBar from "../../components/NavBar/NavBar";
 import currentVot from "../../images/currentVottingCard.png";
 import { BsArrowRight } from "react-icons/bs";
 
-import "./CurrentVoting.scss";
+import "./Wardrobe.scss";
 
-function CurrentVotings() {
+function Wardrobe() {
   return (
     <div>
       <NavBar />
@@ -14,20 +14,18 @@ function CurrentVotings() {
           <div className="current__voting__card__title d-flex flex-column">
             <div className="row d-flex justify-content-center">
               <div className="col-md-8">
-                <h1>Current votings</h1>
+                <h1>Shose 53045 details</h1>
                 <div className="row card__wrapped shadow-lg mt-5 mb-5">
                   <div className="col-md-6 p-0">
-                    <div className="card-img">
-                      <div className="relative__image">
-                        <img src={currentVot} alt="" />
-                      </div>
+                    <div className="relative__image">
+                    <img src={currentVot} alt="" />
                     </div>
                   </div>
                   <div className="col-md-6 p-0">
-                  <div className="desc-div">
+                    <div className="desc-div">
                       <div className="card__content pt-5">
                         <div className="card__top">
-                          <h5 className="m-0">Collection Meta.Omni</h5>
+                          <h5 className="m-0">Shoes 53045</h5>
                           <div className="card__items d-flex">
                             <div className="card__top__left product-desc">
                               <small>caMIX'AIR X RN COLLECTIBLEption</small>
@@ -64,7 +62,12 @@ function CurrentVotings() {
                       </div>
                       <div className="card__btn__area">
                         <button className="card__btn d-flex align-items-center justify-content-center">
-                          Enter the votes <BsArrowRight className="ms-3" />
+                          <BsArrowRight className="ms-3" /> Sell
+                        </button>
+                      </div>
+                      <div className="card__btn__area">
+                        <button className="card__btn d-flex align-items-center justify-content-center">
+                            <BsArrowRight className="ms-3" /> Transfer 
                         </button>
                       </div>
                     </div>
@@ -79,4 +82,4 @@ function CurrentVotings() {
   );
 }
 
-export default CurrentVotings;
+export default Wardrobe;

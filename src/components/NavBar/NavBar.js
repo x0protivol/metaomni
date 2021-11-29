@@ -1,10 +1,22 @@
 import React from "react";
 import { FaShoppingCart } from "react-icons/fa";
+import { ethers } from 'ethers'
+import Web3Modal from "web3modal"
 import { FaWallet } from "react-icons/fa";
 import Hanger from "../../images/navIcon.svg";
 import NvaBrand from "../../images/NvaBrand.svg";
 import "./NavBar.scss";
 function NavBar() {
+
+  const connectWallet = async () => {
+    const web3Modal = new Web3Modal()
+    const connection = await web3Modal.connect()
+    const provider = new ethers.providers.Web3Provider(connection)
+    const signer = provider.getSigner();
+
+
+  }
+
   return (
     <div className="nav__area">
       <div className="container">
@@ -54,7 +66,7 @@ function NavBar() {
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link rightLink">
+                  <a class="nav-link rightLink" onClick={() => connectWallet()}>
                     <FaWallet className="navIcon me-3" />
                     Connect wallet
                   </a>

@@ -28,6 +28,28 @@
   color: #61dafb;
 }
 
+.product-desc {
+  width: 70%;
+}
+
+.card__items.d-flex div.d-flex.justify-content-center.align-items-center {
+  width: 30%;
+}
+
+.card-img,
+div.card-img div.relative__image,
+div.card-img div.relative__image img {
+  height: 100%;
+}
+
+.card-img {
+  border-radius: 54px !important;
+}
+
+div.desc-div {
+  padding-left: 45px;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
